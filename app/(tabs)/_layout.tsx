@@ -52,12 +52,14 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
             <View style={focused ? styles.containerFocused : styles.container}>
-              <Iconify icon="streamline:home-4-solid" size={30} color="#FFFFFF" />
+              <Iconify icon="streamline:home-4-solid" size={30} color="#FFFFFF" style={{
+                marginBottom: 5
+              }}/>
             </View>
             
           ),
